@@ -1,0 +1,78 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    a=10;
+    b=20;
+    c=a+b;
+    cout<<"sum of "<<a<<" and "<<b<<" = "<<c;
+    return 0;
+}
+
+
+ #include <iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cout<<"Enter first no:";
+    cin>>a;
+    cout<<"Enter second no:";
+    cin>>b;
+    c=a+b;
+    cout<<"sum of "<<a<<" and "<<b<<" = "<<c;
+    return 0;
+}
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    float c;
+    cout<<"Enter a:";
+    cin>>a;
+    cout<<"Enter b:";
+    cin>>b;
+    c=(float)(a+b)/2;
+    cout<<"The average of "<<a<<" and "<<b<<" is "<<c;
+    return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    int c;
+    cout<<"Enter side1:";
+    cin>>a;
+    cout<<"Enter side2:";
+    cin>>b;
+    c=a*b;
+    cout<<"Area = "<<c;
+    return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    int c;
+    cout<<"Enter value1:";
+    cin>>a;
+    cout<<"Enter value2:";
+    cin>>b;
+    c=a;
+    a=b;
+    b=c;
+    cout<<"A = "<<a<<"    B = "<<b;
+    return 0;
+}
+
+
+
