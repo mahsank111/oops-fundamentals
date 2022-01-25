@@ -75,4 +75,134 @@ int main()
 }
 
 
+25/01/2022 _ Cap202 C++ 
+                        FIND EVEN & ODD NO.s
 
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+int a;
+cout<<"Enter a number:";
+cin>>a;
+if(a%2 == 0)
+{
+cout<<"Even. . . ";
+}
+if(a%2 != 0)
+{
+cout<<"Odd. . .";
+}
+return 0;
+}
+
+               APPLYING GOTO STATEMENT
+               
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+int a;
+cout<<"Enter a number:";
+cin>>a;
+if(a%2 == 0)
+{
+cout<<"Even. . . ";
+goto abc;
+}
+cout<<"Odd. . .";
+abc:
+return 0;
+}
+
+                         FIND LEAP YEAR
+#include <iostream>
+using namespace std;
+
+int main() {
+int year;
+
+   cout <<"Enter a year: ";
+    cin >> year;
+
+    if (year % 4 == 0) {
+          if (year % 100 == 0) 
+        {
+          if (year % 400 == 0)
+            
+            cout << year <<" is a leap year.";
+        else
+        
+            cout << year <<" is not a leap year.";
+        }
+        
+        else
+            
+            cout << year <<" is a leap year.";
+    }
+    
+    else
+        cout << year <<" is not a leap year.";
+
+    return 0;
+}
+
+                                              GREATEST AMONG THREE NO.s 
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int a,b,c;
+cout<<"Enter 3 numbers:";
+cin>>a>>b>>c;
+if(a>=b && a>=c )
+{
+cout<<"A is greatest . . .";
+}
+if(b>=a && b>=c )
+{
+cout<<"B is greatest . . .";
+}
+if(c>=a && c>=b )
+{
+cout<<"C is greatest . . .";
+}
+return 0;
+}
+                                FIND STUDENT GRADE BY GIVEN CONDITIONS 
+                                
+#include<iostream>
+using namespace std;
+int main()
+{
+int b,c,d,e,f;
+float a;
+cout<<"Enter the marks of 5 subjects: ";
+cin>>f>>b>>c>>d>>e;
+a=(f+b+c+d+e)/5.0;
+if(a<=100&&a>=90)
+{
+cout<<"Congrats you have scored Merit place";
+}
+else if(a<=89&&a>=60)
+{
+cout<<"Congrats you have scored First place";
+}
+else if(a<=59&&a>=50)
+{
+cout<<"Congrats you have scored Second place";
+}
+else if(a<=49&&a>=30)
+{
+cout<<"Congrats you have scored Third place";
+}
+else
+{
+cout<<"Better Luck Next Time";
+}
+}
