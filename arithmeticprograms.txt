@@ -206,3 +206,14 @@ else
 cout<<"Better Luck Next Time";
 }
 }
+
+                                     PRE&POST INCREMENT 
+#include<iostream>
+using namespace std;
+int main()
+{
+int a,b;
+a=2;
+b=a++;      &     ++a  
+cout<<a<<" "<<b;
+}
