@@ -1,0 +1,175 @@
+         PRINT EVEN & ODD USING GOTO
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int a;
+cout<<"Enter a number:";
+cin>>a;
+if(a%2==0)
+{
+cout<<"Even ";
+goto abc;
+}
+cout<<"Odd ";
+abc:
+return 0;
+}
+
+          PRINTING A TABLE USING GOTO
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i=1,n,m,a;
+    cout<<"Enter the limit :";
+    cin>>n;
+    cout<<"Enter the table's number :";
+    cin>>a;
+    start:
+        cout<<"\n"<<i<<"*"<<a<<"="<<i*a;
+        i++;
+        if(i<=n)
+        {
+            goto start;
+        }
+    return 0;
+}
+                  
+            USING SWITCH CASE B/W DAYS 
+                  
+ #include <iostream>
+using namespace std;
+
+int main()
+{
+int day = 4;
+switch (day)
+{
+case 1:
+cout << "Monday";
+break;
+case 2:
+cout << "Tuesday";
+break;
+case 3:
+cout << "Wednesday";
+break;
+case 4:
+cout << "Thursday";
+break;
+case 5:
+cout << "Friday";
+break;
+case 6:
+cout << "Saturday";
+break;
+case 7:
+cout << "Sunday";
+break;
+default:
+cout<<"Wrong day No...";
+}
+cout<<"\nBye...";
+return 0;
+}
+        
+        
+        FACTORIAL USING SWITCH CASE 
+        
+ #include <iostream>
+using namespace std;
+
+int main()
+{
+int n,f=1;
+cout<<"Enter a no:";
+cin>>n;
+switch (n)
+{
+case 5:
+  f=f*5;
+case 4:
+  f=f*4;
+case 3:
+  f=f*3;
+case 2:
+  f=f*2;
+case 1:
+case 0:
+cout<<"Factorial = "<<f<<endl;
+break;
+default:
+cout<<"Wrong no . . .";
+}
+cout<<"\nBye...";
+return 0;
+}
+
+         PINTING NUMBERS IN DIFFERENT METHODS 
+         
+#include <iostream>
+using namespace std;
+
+int main()
+{
+char n;
+abc:
+cout<<"Enter a Y/N:";
+cin>>n;
+if(n!='y')
+{
+goto abc;
+}
+cout<<"\nGood Work . . .";
+return 0;
+}
+                       
+                       ANOTHER WAY
+                       
+ #include<iostream>
+using namespace std;
+int main()
+{
+int i,n;
+cout<<"\n Enter the starting value:";
+cin>>i;
+cout<<"\n Enter the Ending value:";
+cin>>n;
+start:
+if(i%2==0)
+{
+cout<<"\n"<<i;
+}
+i++;
+if(i<=n)
+{
+goto start;
+}
+return 0;
+}
+        ANOTHER
+        
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int i=1,n,sum=0;
+cout<<"Enter Limit:";
+cin>>n;
+L:
+cout<<i<<"+";
+sum=sum+i;
+i++;
+if(i<=n)
+{
+goto L;
+}
+cout<<"\b="<<sum;
+cout<<"\nGood Work . . .";
+return 0;
+}
+
