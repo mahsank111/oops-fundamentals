@@ -1,4 +1,4 @@
-         PRINT EVEN & ODD USING GOTO
+                                 PRINT EVEN & ODD USING GOTO            01/02
 
 #include<iostream>
 using namespace std;
@@ -17,7 +17,7 @@ abc:
 return 0;
 }
 
-          PRINTING A TABLE USING GOTO
+                                   PRINTING A TABLE USING GOTO
 
 #include<iostream>
 using namespace std;
@@ -38,7 +38,7 @@ int main()
     return 0;
 }
                   
-            USING SWITCH CASE B/W DAYS 
+                                  USING SWITCH CASE B/W DAYS 
                   
  #include <iostream>
 using namespace std;
@@ -77,7 +77,7 @@ return 0;
 }
         
         
-        FACTORIAL USING SWITCH CASE 
+                           FACTORIAL USING SWITCH CASE 
         
  #include <iostream>
 using namespace std;
@@ -108,7 +108,7 @@ cout<<"\nBye...";
 return 0;
 }
 
-         PINTING NUMBERS IN DIFFERENT METHODS 
+                      PINTING NUMBERS IN DIFFERENT METHODS 
          
 #include <iostream>
 using namespace std;
@@ -127,7 +127,7 @@ cout<<"\nGood Work . . .";
 return 0;
 }
                        
-                       ANOTHER WAY
+                              ANOTHER WAY
                        
  #include<iostream>
 using namespace std;
@@ -173,3 +173,85 @@ cout<<"\nGood Work . . .";
 return 0;
 }
 
+                                   02/02 - CLASS CODING 
+                                   PRINT SUM & AVERAGE 
+#include<iostream>
+using namespace std;
+
+int main()
+{
+int i =1;
+int n;
+int sum=0;
+float avg;
+cout<<"Enter a number:";
+cin>>n;
+while(i<=n)
+{
+cout<<i<<endl;
+sum = sum + i;
+i++;
+}
+avg=sum/(float)n;
+cout<<"Sum = "<<sum<<endl;
+cout<<"Average :"<<avg<<endl;
+cout<<"Bye. . . ";
+
+}
+                                   
+                                  REVERSE NUMBER                                   
+                                   
+#include<iostream>
+using namespace std;
+
+int main()
+{
+int i =1;
+int n,r;
+int sum=0;
+
+cout<<"Enter a number:";
+cin>>n;
+while(n!=0)
+{
+r=n%10;
+sum = sum*10 + r;
+n=n/10;
+}
+
+cout<<"Reverse :"<<sum<<endl;
+cout<<"Bye. . . ";
+}
+
+                               PALINDROME CODE IN C++
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+int i =1;
+int n,r,t;
+int sum=0;
+
+cout<<"Enter a number:";
+cin>>n;
+t=n;
+while(n!=0)
+{
+r=n%10;
+sum = sum*10 + r;
+n=n/10;
+}
+if(sum==t)
+{
+cout<<"Palindrome...\n";
+}
+else
+{
+cout<<"Not palindrome...\n";
+}
+cout<<"Bye. . . ";
+}
+
+                               
