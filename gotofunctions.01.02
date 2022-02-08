@@ -254,4 +254,117 @@ cout<<"Not palindrome...\n";
 cout<<"Bye. . . ";
 }
 
+                      PRACTICAL CODES ---  08/02
+                    
+                    TO FIND NO. IS ARMSTRONG OR NOT
                                
+#include <stdio.h>
+#include <iostream.h>
+#include <math.h>
+#include <conio.h>
+int main()
+{
+int n,s=0,r,t,copy;
+cout<<"Enter number: ";
+cin>>n;
+t=printf("%d",n);
+copy=n;
+clrscr();
+cout<<"Your no = "<<n<<endl;
+while(n)
+{
+r = n%10;
+s = s + pow(r,t);
+n = n/10;
+}
+if (copy==s)
+{
+cout<<"Armstrong . . .";
+}
+else
+{
+cout<<"Not Armstrong. . .";
+}
+return 0;
+}
+                          ANOTHER WAY
+#include <stdio.h>
+#include <iostream.h>
+#include <math.h>
+#include <conio.h>
+int main()
+{
+int s,r,t,copy;
+int in,fn;
+int i;
+cout<<"Enter initial number: ";
+cin>>in;
+cout<<"Enter final number: ";
+cin>>fn;
+
+i=in;
+cout<<"Armstrong No.s\n";
+while(i<=fn)
+{
+copy=i;
+t=0;
+s=0;
+while(i)
+{
+t++;
+i=i/10;
+}
+i=copy;
+while(i)
+{
+r = i%10;
+s = s + pow(r,t);
+i =i/10;
+}
+if (copy==s)
+{
+cout<<s<<" ";
+}
+i=copy;
+i++;
+}
+return 0;
+}                          
+                         
+            
+               CHECKING NO. IS PRIME OR NOT
+                        
+#include<iostream>
+using namespace std;
+int main(){
+int a,c=0,i;
+cin>>a;
+for(i=1;i<=a;i++){
+if(a%i==0){
+c++;
+}
+}
+if(c==2){
+cout<<"yes prime";
+
+}
+else{
+cout<<"no";
+}
+
+                    PRINT NO. 1 TO 10  
+                    
+ #include <stdio.h>
+#include <iostream.h>
+int main()
+{
+int i=1;
+while(i<=10)
+{
+cout<<i<<endl;
+i++;
+}
+cout<<"Bye . . .";
+return 0;
+}
+                   
