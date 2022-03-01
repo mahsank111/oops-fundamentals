@@ -1,0 +1,106 @@
+# Cpp-Programs
+All C++ Programs For Revision
+
+           RECORD AND DISPLAYING FUNCTIONS IC CPP USING "CLASSES"
+           
+ #include <iostream>
+using namespace std;
+class student
+{
+int roll;
+string name;
+float avg;
+
+public:
+void take()
+{
+fflush(stdin);
+cout << "Enter name of student: ";
+getline(cin, name);
+cout << "Enter roll of student: ";
+cin >> roll;
+cout << "Enter avg marks: ";
+cin >> avg;
+}
+void display()
+{
+cout << "Name= " << name << "\nRoll: " << roll << "\nMarks= " << avg;
+}
+};
+int main()
+{
+student a[5];
+for (int i = 0; i < 5; i++)
+{
+cout << "Enter the record of " << i + 1 << " student\n";
+a[i].take();
+}
+for (int i = 0; i < 5; i++)
+{
+cout << "\n-----------student " << i + 1 << "-----------\n";
+a[i].display();
+}
+}
+
+
+
+                       FINDING ANY SPECIFIC INT OPROGRAMM LIKE "TOPPER ETC"
+                       
+                       
+  #include <iostream>
+#include <stdio.h>
+using namespace std;
+class student
+{
+int roll;
+string name;
+float avg;
+
+public:
+void take()
+{
+fflush(stdin);
+cout << "Enter name of student: ";
+getline(cin, name);
+cout << "Enter roll of student: ";
+cin >> roll;
+cout << "Enter avg marks: ";
+cin >> avg;
+}
+void display()
+{
+cout << "\nName= " << name << "\nRoll: " << roll << "\nMarks= " << avg;
+}
+int give()
+{
+return avg;
+}
+};
+int main()
+{
+int x,y,z=0;
+cout<<"Enter no of record: ";
+cin>>x;
+student a[100];
+for (int i = 0; i < x; i++)
+{
+cout << "Enter the record of " << i + 1 << " student\n";
+a[i].take();
+}
+for(int step =0;step<x;step++)
+{
+for(int j=step+1;j<x;j++)
+{
+if(a[j].give()>a[step].give())
+{
+student temp=a[step];
+a[step]=a[j];
+a[j]=temp;
+}
+}
+}
+for(int i=0;i<x;i++)
+{
+a[i].display();
+}
+}                                        
