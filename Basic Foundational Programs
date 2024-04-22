@@ -71,4 +71,57 @@ int main()
 
 	return 0;
 }
+
+
+
+//************************************************************************STAR PRINTING**************************************************
+
+
+// C++ program to print inverted triangle pattern using
+// while loop
+#include <iostream>
+using namespace std;
+
+// function to print pattern
+void printInvTriangle(int n)
+{
+
+	// loop variables
+	int i = 0;
+	int j;
+
+	// outer loop to iterate through each row
+	while (i < n) {
+
+		// leading space counter
+		int space = i;
+		j = 0;
+
+		// inner loop to print pattern in each row
+		while (j < 2 * n - i - 1) {
+
+			// condition to check weather to print star * or
+			// whitespace
+			if (space) {
+				cout << " ";
+				space--;
+			}
+			else {
+				cout << "* ";
+			}
+			j++;
+		}
+		cout << endl;
+		i++;
+	}
+}
+
+// driver code
+int main()
+{
+	printInvTriangle(5);
+
+	return 0;
+}
+
  
