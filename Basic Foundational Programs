@@ -189,3 +189,9 @@ int main() {
 This loop will also execute the block of code 5 times. Even if the condition i < 5 is initially false, the code inside the loop will execute at least once before the condition is checked.
 
 
+*********************************************************************************************************************************************************************************************************
+
+
+
+
+
